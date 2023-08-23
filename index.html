@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>animation übungen</title>
+  </head>
+  <style>
+    img {
+      width: 100px;
+      animation-name: bild;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate-reverse;
+      animation-timing-function: ease;
+    }
+    .box1{
+      overflow: hidden;
+      display: flex;
+      animation-name: box1;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate-reverse;
+      animation-timing-function: ease;
+    }
+    main {
+      margin-top: 200px;
+      display: flex;
+    }
+     @keyframes box1 {
+      0% {
+        border: darkmagenta solid 5px;
+        transform:  translateX(0px) translateY(50px);
+      }
+      10% {
+        border: rgb(83, 36, 83) solid 5px;
+        transform:  translateX(100px) translateY(-100px);
+      }
+      20% {
+        border: rgb(114, 95, 114) solid 5px;
+        transform:  translateX(200px) translateY(50px);
+      }
+      40% {
+        border: rgb(221, 169, 221) solid 5px;
+        transform:  translateX(400px) translateY(-150px);
+      }
+      50% {
+        border: rgb(93, 138, 141) solid 5px;
+        transform:  translateX(600px) translateY(50px);
+      }
+      
+      70% {
+        border: rgb(102, 112, 121) solid 5px;
+        transform:  translateX(700px) translateY(-120px);
+      }
+      80% {
+        border: rgba(62, 97, 91, 0.533) solid 5px;
+        transform:  translateX(800px) translateY(50px);
+      }
+      90% {
+        border: rgba(52, 177, 156, 0.533) solid 5px;
+        transform:  translateX(900px) translateY(-110px);
+      }
+      100% {
+        border: rgba(52, 177, 156, 0.533) solid 5px;
+        transform:  translateX(1000px) translateY(50px);
+      }
+     }
+      @keyframes bild {
+      0% {
+        border-radius: 25%;
+        transform: scale(0,5);
+      }
+      100% {
+        border-radius: 100%;
+        transform: scale(1);
+      }
+   
+      
+      }
+  </style>
+  </head>
+  <body>
+    <main>
+   <div class="box1">
+     <img src="https://th.bing.com/th/id/R.e93b70f603c7873e50c98859c2ff7f3b?rik=lHfkwTZgjdhhpQ&riu=http%3a%2f%2fwww.rantapallo.fi%2fwp-content%2fuploads%2f2016%2f08%2fkreikka-ranta-luola-ss.jpg&ehk=thbkszTjwl8affxauDOA%2brZtKZzE6IeI2CAktCKkgb0%3d&risl=&pid=ImgRaw&r=0"/>
+
+   </div>
+    </main>
+  </body>
+</html>
